@@ -9,16 +9,17 @@ function addComment(event) {
     if (newComment !== "") {
         const commentItem = document.createElement('li');
         commentItem.textContent = newComment;
-        commentsList.prepend(commentItem); // Add the new comment to the top of the list
-        commentTextarea.value = ""; // Clear the textarea
-        limitComments(); // Limit the number of displayed comments
+        commentsList.prepend(commentItem); 
+        
+        commentTextarea.value = ""; 
+        limitComments();
     }
 }
 
 function limitComments() {
     const comments = commentsList.querySelectorAll('li');
     if (comments.length > 5) {
-        commentsList.removeChild(comments[5]); // Remove the oldest comment if more than 5
+        commentsList.removeChild(comments[5]);
     }
 }
 
@@ -92,7 +93,17 @@ function details(id) {
             </div>
             `;
             detailsElement.innerHTML = detailsInfo;
-            detailsElement.append(detailsDiv); // Append detailsDiv to detailsElement
+            detailsElement.append(detailsDiv); 
         })
         .catch(error => console.error('Error fetching details:', error));
 }
+
+//video
+const counter = 1;
+setInterval(function(){
+    document.getElementById('radio' + counter).checked = true;
+    counter++;
+    if(counter > 4){
+        counter = 1;
+    }
+},5000)

@@ -72,16 +72,47 @@
             </div>
         </div>
         <div class="section">
-        <div class="restarant" id="restarants">
-            <h2>restarant</h2>
+        
+            <h2>cooking videos</h2>
             <div class="black"></div>
-            <form>
-                <input type="text" id="search " placeholder="search restarant in your location">
-            </form>
-            <div class="image-restarant">
-                <img src="image/jahanzeb-ahsan-YgZ5Oe8KXv8-unsplash.jpg" alt="">
-                <img src="image/graham-mansfield-ugFO1FcdOFE-unsplash.jpg" alt="">
-            </div>
+           
+            <div class="slider">
+              <div class="slides">
+                  <input type="radio" name="radio-btn" id="radio1">
+                  <input type="radio" name="radio-btn" id="radio2">
+                  <input type="radio" name="radio-btn" id="radio3">
+                  <input type="radio" name="radio-btn" id="radio4">
+          
+                  <div class="slide-first">
+                    <iframe width="800" height="500" src="https://www.youtube.com/embed/2qH9ZSj5FIM?si=TkGMkXDYeD9Gwi2w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                  <div class="slide">
+                    <iframe width="800" height="500" src="https://www.youtube.com/embed/LKuF1DTyVGY?si=ymPPxPic_aNA3R0T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                  <div class="slide">
+                    <iframe width="800" height="500" src="https://www.youtube.com/embed/IGphzUP7oXs?si=Qx3xv0RToLPIrJge" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+                  <div class="slide">
+                    <iframe width="800" height="500" src="https://www.youtube.com/embed/4VUuUUdZNT8?si=HAeM3-v_3wHH4z3N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </div>
+          
+                  <!--navigation-->
+                  <div class="navigate-auto">
+                      <div class="auto-btn1"></div>
+                      <div class="auto-btn2"></div>
+                      <div class="auto-btn3"></div>
+                      <div class="auto-btn4"></div>
+                  </div>
+              </div>
+              <!--manual navigation-->
+              <div class="navigation-manual">
+                  <label for="radio1" class="manual-btn"></label>
+                  <label for="radio2" class="manual-btn"></label>
+                  <label for="radio3" class="manual-btn"></label>
+                  <label for="radio4" class="manual-btn"></label>
+              </div>
+             </div>
+           
         </div>
       </div>
       <div class="about" id="about-us">
@@ -102,6 +133,8 @@
         <ul id="comments"></ul>
       </div>
     </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_PLACES_API_KEY&libraries=places"></script>
+
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
       <script src="script.js"></script>    
 </body>
